@@ -1,0 +1,156 @@
+<!--
+Plantilla HTML simple para publicar en GitHub Pages o Netlify.
+Instrucciones rápidas:
+ 1) Reemplaza +XXNUM con tu código de país y número en los enlaces de WhatsApp.
+ 2) Reemplaza los textos de producto (nombre, precio, descripción) por los tuyos.
+ 3) Cambia las imágenes (usa URLs reales o súbelas a tu repo y actualiza las rutas).
+ 4) Publica en GitHub: crea repo username.github.io y sube este archivo como index.html.
+
+Esta plantilla usa botones de "Pedir por WhatsApp" (sin procesador de pagos). Si quieres aceptar pagos en línea, te recomiendo integrar Ecwid, PayPal o Stripe y/o usar un plan gratuito de Square Online.
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Mascotas - Comida para Perros y Gatos</title>
+  <meta name="description" content="Tienda local de comida para perros y gatos. Pedidos por WhatsApp y entregas a domicilio.">
+  <style>
+    :root{--accent:#2b8a3e;--muted:#666}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111}
+    header{background:linear-gradient(90deg,#e9f6ee,white); padding:18px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:var(--accent);display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{margin-left:auto}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{border:1px solid #eee;border-radius:10px;padding:12px;background:white;display:flex;flex-direction:column}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .price{font-weight:700;margin-top:6px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-whatsapp{background:#25D366;color:white}
+    footer{border-top:1px solid #eee;padding:18px;margin-top:20px;color:var(--muted)}
+    .hero{display:flex;flex-direction:column;gap:12px;padding:20px;background:white;border-radius:10px;margin-top:12px}
+    @media(min-width:800px){.hero{flex-direction:row;align-items:center}}
+    .hero .text{flex:1}
+    .hero .cta{min-width:220px}
+    .badge{background:#fff6ea;padding:6px 8px;border-radius:999px;color:#a65b00;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div class="logo">PM</div>
+        <div>
+          <div style="font-weight:800;font-size:18px">Tienda Mascotas</div>
+          <div style="color:var(--muted);font-size:13px">Comida saludable para perros y gatos • Entrega local</div>
+        </div>
+      </div>
+      <nav style="margin-left:auto">
+        <a href="#tienda" style="margin-right:12px;color:var(--muted);text-decoration:none">Tienda</a>
+        <a href="#sobre" style="margin-right:12px;color:var(--muted);text-decoration:none">Sobre</a>
+        <a href="#contacto" style="color:var(--muted);text-decoration:none">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="text">
+        <div class="badge">Envío en 24-48h en [Tu Ciudad]</div>
+        <h1 style="margin:8px 0">Comida para perros y gatos — natural, equilibrada y a domicilio</h1>
+        <p style="color:var(--muted)">Ofrecemos marcas premium y opciones económicas. Suscripciones mensuales disponibles. ¿Tienes dudas sobre la dieta de tu mascota? Contáctanos por WhatsApp.</p>
+        <div class="cta" style="margin-top:10px">
+          <!-- Reemplaza +XXNNNNNNNN por tu código y número -->
+          <a class="btn btn-whatsapp" href="https://wa.me/+XXNNNNNNNN?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank">Pedir por WhatsApp</a>
+        </div>
+      </div>
+      <div style="flex:1">
+        <img src="https://source.unsplash.com/800x600/?dog,cat,food" alt="Perro y gato feliz" style="width:100%;border-radius:10px;object-fit:cover">
+      </div>
+    </section>
+
+    <section id="tienda" style="margin-top:20px">
+      <h2>Productos destacados</h2>
+      <div class="grid" style="margin-top:10px">
+
+        <!-- Producto 1 -->
+        <article class="card">
+          <img src="https://source.unsplash.com/600x400/?dog,food" alt="Comida seca para perros 1kg">
+          <h3>Comida Seca para Perros — 1 kg</h3>
+          <div style="color:var(--muted);font-size:14px">Rinde para 30 días. Con pollo y arroz. Ideal para adultos.</div>
+          <div class="price">$35.000 COP</div>
+          <div style="margin-top:auto;display:flex;gap:8px;align-items:center;margin-top:8px">
+            <a class="btn btn-whatsapp" href="https://wa.me/+XXNNNNNNNN?text=Hola%2C%20quiero%20el%20producto%20Comida%20Seca%20para%20Perros%20-%201kg" target="_blank">Pedir por WhatsApp</a>
+            <a class="btn" style="background:#f1f1f1;color:#111">Agregar al carrito</a>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card">
+          <img src="https://source.unsplash.com/600x400/?cat,food" alt="Comida húmeda para gatos 400g">
+          <h3>Comida Húmeda para Gatos — 400 g</h3>
+          <div style="color:var(--muted);font-size:14px">Sabor atún. Textura suave, apta para gatos senior.</div>
+          <div class="price">$9.500 COP</div>
+          <div style="margin-top:auto;display:flex;gap:8px;align-items:center;margin-top:8px">
+            <a class="btn btn-whatsapp" href="https://wa.me/+XXNNNNNNNN?text=Hola%2C%20quiero%20el%20producto%20Comida%20H%C3%Bameda%20para%20Gatos%20-%20400g" target="_blank">Pedir por WhatsApp</a>
+            <a class="btn" style="background:#f1f1f1;color:#111">Agregar al carrito</a>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="card">
+          <img src="https://source.unsplash.com/600x400/?dog,treats" alt="Galletas para perros">
+          <h3>Galletas Naturales — 200 g</h3>
+          <div style="color:var(--muted);font-size:14px">Snacks horneados sin conservantes.</div>
+          <div class="price">$14.000 COP</div>
+          <div style="margin-top:auto;display:flex;gap:8px;align-items:center;margin-top:8px">
+            <a class="btn btn-whatsapp" href="https://wa.me/+XXNNNNNNNN?text=Hola%2C%20quiero%20el%20producto%20Galletas%20Naturales%20-%20200g" target="_blank">Pedir por WhatsApp</a>
+            <a class="btn" style="background:#f1f1f1;color:#111">Agregar al carrito</a>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="card">
+          <img src="https://source.unsplash.com/600x400/?cat,treats" alt="Suplemento vitaminas para gatos">
+          <h3>Suplemento Vitaminas — 60 caps</h3>
+          <div style="color:var(--muted);font-size:14px">Apoya pelo y piel. Consulte al veterinario antes de usar.</div>
+          <div class="price">$28.000 COP</div>
+          <div style="margin-top:auto;display:flex;gap:8px;align-items:center;margin-top:8px">
+            <a class="btn btn-whatsapp" href="https://wa.me/+XXNNNNNNNN?text=Hola%2C%20quiero%20el%20producto%20Suplemento%20Vitaminas%20-%2060%20caps" target="_blank">Pedir por WhatsApp</a>
+            <a class="btn" style="background:#f1f1f1;color:#111">Agregar al carrito</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="sobre" style="margin-top:26px">
+      <h2>Sobre nosotros</h2>
+      <p style="color:var(--muted)">Somos una tienda local especializada en nutrición para mascotas. Seleccionamos productos con altos estándares de calidad y ofrecemos asesoría básica sobre alimentación. Para dudas nutricionales avanzadas recomendamos consultar a un veterinario.</p>
+    </section>
+
+    <section id="contacto" style="margin-top:20px">
+      <h2>Contacto</h2>
+      <p>Tel/WhatsApp: <strong>+XX NNN NNN NNN</strong></p>
+      <p>Email: <strong>tutienda@ejemplo.com</strong></p>
+      <p>Horario de atención: Lun-Vie 9:00 - 18:00</p>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+          <div>&copy; <span id="year"></span> Tienda Mascotas</div>
+          <div style="color:var(--muted);font-size:13px">Política de envíos • Devoluciones • Privacidad</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
